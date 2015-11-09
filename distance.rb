@@ -4,7 +4,7 @@
 
 require 'time'
 
-class Race
+class Distance
   attr_writer :miles, :km
 
   def initialize (distance, miles = true)
@@ -32,10 +32,4 @@ class Race
   def to_km
     @km
   end
-
 end
-
-bloomsday = Race.new(12, false)
-puts "Bloomsday is #{bloomsday.to_m} miles long"
-marathon = Race.new(26.2)
-puts "A marathon is #{marathon.to_km} km long"
